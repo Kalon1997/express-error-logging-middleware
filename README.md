@@ -7,13 +7,15 @@ npm package for express error logging middleware, storing errors in server and p
 
 # How to pass as middleware?
 ```
-const { errorLoggingMiddleware } = require("error-logging-middleware");
+const { errorLoggingMiddleware } = require("express-error-logging-middleware");
  getRoutes(){
      this.route.get("/get", (req, res, next) => {
       this.controller.someController(req, res, next)
     },errorLoggingMiddleware);
   }
 ```
+It creates two .txt files, (err-400.txt and err-500.txt) in root directory, to store 4XX and 5XX errors respectively.
+
 # How to pass err in next()
 ```
 next(error);
