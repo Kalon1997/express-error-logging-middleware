@@ -6,18 +6,22 @@ npm package for express error logging middleware, storing errors in server and p
 3. And helps into troubleshooting apis by finding which api has logged most errors.
 
 # How to pass as middleware?
-const { errorLoggingMiddleware } = require("../error-logging-middleware");
+```
+const { errorLoggingMiddleware } = require("error-logging-middleware");
  getRoutes(){
      this.route.get("/get", (req, res, next) => {
       this.controller.someController(req, res, next)
     },errorLoggingMiddleware);
   }
-
+```
 # How to pass err in next()
+```
 next(error);
+```
 or
+```
 next(new Error("err"))
-
+```
  - error can be array or string
 
 # Functions
