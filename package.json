@@ -1,6 +1,6 @@
 {
   "name": "express-error-logging-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It is a middleware compatible with express framework, needs to be placed as middleware in route function after the controller call. Stores all 400 and 500 errors on server that are passed as next(err) or next(new Error()) way. And helps into troubleshooting apis by finding which api has logged most errors. ",
   "main": "index.js",
   "scripts": {
