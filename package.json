@@ -1,0 +1,28 @@
+{
+  "name": "@konan22/express-error-logging-middleware",
+  "version": "1.0.0",
+  "description": "It is a middleware compatible with express framework, needs to be placed as middleware in route function after the controller call. Stores all 400 and 500 errors on server that are passed as next(err) or next(new Error()) way. And helps into troubleshooting apis by finding which api has logged most errors. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalon1997/express-error-logging-middleware.git"
+  },
+  "keywords": [
+    "express",
+    "error-logger",
+    "error-logging",
+    "middleware",
+    "error",
+    "logs",
+    "troubleshooting"
+  ],
+  "author": "Kalon Acharjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kalon1997/express-error-logging-middleware/issues"
+  },
+  "homepage": "https://github.com/Kalon1997/express-error-logging-middleware#readme"
+}
